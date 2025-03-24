@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced HTML5 Elements and Forms</title>
+  <!-- You can add external CSS here if needed -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    header, main, footer {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .form-section {
+      background: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Advanced HTML5 Elements and Forms Demo</h1>
+  </header>
+
+  <main>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+      <h2>Roman Numeral List</h2>
+      <ol type="i">
+        <li>Introduction</li>
+        <li>Content Overview</li>
+        <li>Examples</li>
+        <li>Conclusion</li>
+      </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+      <h2>External Image from Pexels</h2>
+      <p>This image is sourced from Pexels.com:</p>
+      <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600" 
+           alt="Scenic view from Pexels" width="600">
+    </section>
+
+    <!-- Table of 5 Contacts -->
+    <section>
+      <h2>Contacts Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Mwangi</td>
+            <td>123 Kenyatta Ave, Nairobi</td>
+            <td>+254 712 345678</td>
+            <td>john.mwangi@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary Wanjiku</td>
+            <td>456 Moi Ave, Mombasa</td>
+            <td>+254 722 234567</td>
+            <td>mary.wanjiku@example.com</td>
+          </tr>
+          <tr>
+            <td>Peter Otieno</td>
+            <td>789 Uhuru St, Kisumu</td>
+            <td>+254 733 345678</td>
+            <td>peter.otieno@example.com</td>
+          </tr>
+          <tr>
+            <td>Grace Njeri</td>
+            <td>321 Kimathi Way, Nyeri</td>
+            <td>+254 744 456789</td>
+            <td>grace.njeri@example.com</td>
+          </tr>
+          <tr>
+            <td>David Kamau</td>
+            <td>654 Kenyatta Rd, Nakuru</td>
+            <td>+254 755 567890</td>
+            <td>david.kamau@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <div class="form-section">
+        <form action="#" method="post">
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+          </div>
+          <!-- Date Field -->
+          <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <!-- Dropdown Field -->
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">Select your country</option>
+              <option value="us">Somali</option>
+              <option value="uk">Uganda</option>
+              <option value="ca">Kenya</option>
+              <option value="au">Tanzania</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <!-- Radio Buttons -->
+          <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="male" required> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </div>
+          <!-- Checkboxes -->
+          <div class="form-group">
+            <label>Interests:</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+              <label><input type="checkbox" name="interests" value="design"> Design</label>
+              <label><input type="checkbox" name="interests" value="music"> Music</label>
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Multimedia Example: Audio and Video -->
+    <section>
+      <h2>Multimedia Elements</h2>
+      <p>Here is an example of audio and video elements:</p>
+      <!-- Audio Element -->
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br>
+      <!-- Video Element -->
+      <video width="600" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Advanced HTML5 Demo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
